@@ -1,0 +1,4 @@
+#!/bin/bash
+
+webapp-launch "https://www.youtube.com/feed/subscriptions"
+

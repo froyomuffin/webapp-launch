@@ -1,0 +1,4 @@
+#!/bin/bash
+
+webapp-launch "https://www.disneyplus.com/home"
+

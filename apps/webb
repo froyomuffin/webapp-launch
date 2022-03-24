@@ -1,0 +1,4 @@
+#!/bin/bash
+
+webapp-launch "https://www.jwst.nasa.gov/content/webbLaunch/whereIsWebb.html?units=metric"
+

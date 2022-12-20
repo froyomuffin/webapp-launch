@@ -5,4 +5,4 @@ APP_URL="$1"
 [ -z "$APP_URL" ] && echo "Error: Missing URL" && exit
 
 echo "Launching \"$APP_URL\""
-google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland --new-window --app="$APP_URL"
+google-chrome-stable --new-window --app="$APP_URL"

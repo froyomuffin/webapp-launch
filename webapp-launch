@@ -4,5 +4,18 @@ APP_URL="$1"
 
 [ -z "$APP_URL" ] && echo "Error: Missing URL" && exit
 
+OS=`uname -mrs | awk '{ print $1 }'`
+echo "OS: $OS"
+
 echo "Launching \"$APP_URL\""
-google-chrome-stable --new-window --app="$APP_URL"
+
+case $OS in
+  "Darwin")
+    COMMAND="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+    ;;
+  "Linux")
+    COMMAND="google-chrome-stable"
+    ;;
+esac
+
+"$COMMAND" --new-window --app="$APP_URL"

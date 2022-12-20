@@ -18,4 +18,4 @@ case $OS in
     ;;
 esac
 
-"$COMMAND" --new-window --app="$APP_URL"
+eval "$COMMAND" --new-window --app="$APP_URL"

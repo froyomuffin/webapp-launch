@@ -1,4 +1,0 @@
-#!/bin/bash
-
-webapp-launch "https://docs.craft.do/"
-
